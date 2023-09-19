@@ -15,9 +15,9 @@ function OrderDetails() {
     const navigate = useNavigate()
     const [order, setOrder] = useState({})
     useEffect(() => {
-        dispatch(fetchOneOrder(id)).then((res) => setOrder(res.payload.data));
+        dispatch(fetchOneOrder(id)).then((res) => {setOrder(res.payload); console.log({res})});
     }, [])
-
+    console.log(order)
 
     
     console.log({ order })

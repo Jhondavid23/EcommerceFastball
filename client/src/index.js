@@ -7,8 +7,8 @@ import { Provider } from 'react-redux';
 import store from './reduxToolkit/store/store';
 import axios from 'axios'
 
-// axios.defaults.baseURL = 'http://localhost:3001/api'
-axios.defaults.baseURL = 'https://fastball-production.up.railway.app/api';
+axios.defaults.baseURL = 'http://localhost:3001/api'
+//axios.defaults.baseURL = 'https://fastball-production.up.railway.app/api';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
